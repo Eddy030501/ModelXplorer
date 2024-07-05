@@ -35,7 +35,7 @@
 <p><strong>Clone the repository</strong>:</p>
 <p>bash</p>
 <p>Copiar código</p>
-<p><code>git clone https://github.com/your/repository.git cd repository</code></p>
+<p><code>git clone https://github.com/Eddy030501/ModelXplorer cd repository</code></p>
 </li>
 <li>
 <p><strong>Build the project</strong> (assuming CMake is used):</p>
