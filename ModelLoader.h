@@ -9,6 +9,7 @@
 #include "Mesh.h"
 #include "ShaderProgram.h"
 #include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 class ModelLoader {
 public:
@@ -21,8 +22,8 @@ public:
     glm::vec3 GetModelPosition() const;
     void SetModelRotation(const glm::vec3& rotation);
     glm::vec3 GetModelRotation() const;
-    void SetModelScale(const glm::vec3& scale); // Nuevo método para establecer la escala del modelo
-    glm::vec3 GetModelScale() const; // Nuevo método para obtener la escala del modelo
+    void SetModelScale(const glm::vec3& scale);
+    glm::vec3 GetModelScale() const;
     bool IsModelLoaded() const;
     std::string GetModelPath() const;
 
@@ -42,5 +43,5 @@ private:
     std::vector<Mesh> meshes;
     glm::vec3 modelPosition;
     glm::vec3 modelRotation;
-    glm::vec3 modelScale; // Nuevo miembro para almacenar la escala del modelo
+    glm::vec3 modelScale;
 };

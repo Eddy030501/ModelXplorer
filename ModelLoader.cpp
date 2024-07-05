@@ -1,5 +1,4 @@
 #include "ModelLoader.h"
-#include "Texture.h"
 #include <iostream>
 #include <glad/glad.h>
 #include <stb_image.h>
@@ -26,17 +25,13 @@ bool ModelLoader::LoadModel(const std::string& filePath) {
 
     std::cout << "Model loaded successfully: " << filePath << std::endl;
 
-    // Guardar la ruta del modelo cargado
     modelPath = filePath;
-
-    // Obtener el directorio del modelo
     modelDirectory = filePath.substr(0, filePath.find_last_of("/\\") + 1);
 
     processNode(scene->mRootNode, scene);
     setupMeshes(scene);
 
-    // Asegurarse de que la escala se configure correctamente para un skybox
-    modelScale = glm::vec3(1.0f); // Escala predeterminada para skybox
+    modelScale = glm::vec3(1.0f);
 
     std::cout << "Mesh setup completed." << std::endl;
 
@@ -46,34 +41,28 @@ bool ModelLoader::LoadModel(const std::string& filePath) {
 void ModelLoader::Draw(ShaderProgram& shader) {
     shader.use();
 
-    // Construir la matriz de modelo
     glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(model, modelPosition); // Aplicar la posición del modelo
-
-    // Aplicar las rotaciones del modelo
-    model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f)); // Rotación inicial
+    model = glm::translate(model, modelPosition);
+    model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     model = glm::rotate(model, glm::radians(modelRotation.x), glm::vec3(1.0f, 0.0f, 0.0f));
     model = glm::rotate(model, glm::radians(modelRotation.y), glm::vec3(0.0f, 1.0f, 0.0f));
     model = glm::rotate(model, glm::radians(modelRotation.z), glm::vec3(0.0f, 0.0f, 1.0f));
-
-    // Aplicar la escala del modelo
     model = glm::scale(model, modelScale);
 
-    // Pasar la matriz de modelo al shader
     shader.setMat4("model", model);
 
     for (unsigned int i = 0; i < meshes.size(); i++) {
         meshes[i].Draw(shader);
     }
 }
-void ModelLoader::SetModelScale(const glm::vec3& scale) {
-    modelScale = scale;
+
+void ModelLoader::SetModelPosition(const glm::vec3& position) {
+    modelPosition = position;
 }
 
-glm::vec3 ModelLoader::GetModelScale() const {
-    return modelScale;
+glm::vec3 ModelLoader::GetModelPosition() const {
+    return modelPosition;
 }
-
 
 void ModelLoader::SetModelRotation(const glm::vec3& rotation) {
     modelRotation = rotation;
@@ -83,12 +72,12 @@ glm::vec3 ModelLoader::GetModelRotation() const {
     return modelRotation;
 }
 
-void ModelLoader::SetModelPosition(const glm::vec3& position) {
-    modelPosition = position;
+void ModelLoader::SetModelScale(const glm::vec3& scale) {
+    modelScale = scale;
 }
 
-glm::vec3 ModelLoader::GetModelPosition() const {
-    return modelPosition;
+glm::vec3 ModelLoader::GetModelScale() const {
+    return modelScale;
 }
 
 bool ModelLoader::IsModelLoaded() const {
