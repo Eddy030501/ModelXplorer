@@ -1,0 +1,16 @@
+D:\Grupo 9\ModelXplorer 2.0\Application.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\Application.obj
+D:\Grupo 9\ModelXplorer 2.0\Camera.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\Camera.obj
+D:\Grupo 9\ModelXplorer 2.0\cubo.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\cubo.obj
+D:\Grupo 9\ModelXplorer 2.0\imGuiView.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\imGuiView.obj
+D:\Grupo 9\ModelXplorer 2.0\include\imgui\imgui.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\imgui.obj
+D:\Grupo 9\ModelXplorer 2.0\include\imgui\imgui_draw.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\imgui_draw.obj
+D:\Grupo 9\ModelXplorer 2.0\include\imgui\imgui_impl_glfw.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\imgui_impl_glfw.obj
+D:\Grupo 9\ModelXplorer 2.0\include\imgui\imgui_impl_opengl3.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\imgui_impl_opengl3.obj
+D:\Grupo 9\ModelXplorer 2.0\include\imgui\imgui_tables.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\imgui_tables.obj
+D:\Grupo 9\ModelXplorer 2.0\include\imgui\imgui_widgets.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\imgui_widgets.obj
+D:\Grupo 9\ModelXplorer 2.0\Mesh.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\Mesh.obj
+D:\Grupo 9\ModelXplorer 2.0\ModelLoader.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\ModelLoader.obj
+D:\Grupo 9\ModelXplorer 2.0\ShaderProgram.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\ShaderProgram.obj
+D:\Grupo 9\ModelXplorer 2.0\stb_image.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\stb_image.obj
+D:\Grupo 9\ModelXplorer 2.0\Texture.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\Texture.obj
+D:\Grupo 9\ModelXplorer 2.0\Utils.cpp;D:\Grupo 9\ModelXplorer 2.0\ModelXplorer 2.0\x64\Debug\Utils.obj
